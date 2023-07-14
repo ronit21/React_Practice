@@ -1,21 +1,22 @@
 import React from 'react'
+
 function Heading (props){
 
 
     /*
-        In this example :- Passing expression as a value(true or false) 
-        from Parent Component(App.js) to Heading (child)
-        we can pass any expression as props
+        In this example :- importing image and then 
+        passed as props from App.js to Heading.js
+        And then used in Heading.js as props.image
+        
     */
-    let userRoleValue = 0; // (1). Based on this value, ternary operator output value 
+    let userRoleValue = 0; 
     
-
 
     return (
         <div>
             <h1>Hello {props.username} Heading Component with JSX</h1>
-            <h1>{userRoleValue===0?'Front-End Developer':'Back-End Developer'}</h1><span>{props.value === true ? 'YES':'NO'}</span>
-          
+            <h1>{userRoleValue===0?'Front-End Developer':'Back-End Developer'}</h1><p>{props.value === true ? 'YES':'NO'}</p>
+            <img src={props.image} alt='Profile pic'/>
             
         </div>
     
