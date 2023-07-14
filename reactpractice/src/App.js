@@ -5,10 +5,11 @@ import ProfilePic from './logo192.png'
 
 
 function App() {
-  let value = true;
   return (
-    <div className="App">
-      <Heading username='Ronit !' value = {value} image = {ProfilePic}/>
+    <div>
+      <Heading username='Ronit' role = 'Front-End Developer' image = {ProfilePic}/>
+      <Heading username='Pankaj' role = 'Back-End Developer' image = {ProfilePic}/>
+      <Heading username='Dev' role = 'Database Management' image = {ProfilePic}/>
     </div>
   );
 }

@@ -2,25 +2,19 @@ import React from 'react'
 
 function Heading (props){
 
-
     /*
-        In this example :- importing image and then 
-        passed as props from App.js to Heading.js
-        And then used in Heading.js as props.image
+        In this Example :-
+        Using Re-use same component multiple times
         
     */
-    let userRoleValue = 0; 
-    
 
     return (
-        <div>
-            <h1>Hello {props.username} Heading Component with JSX</h1>
-            <h1>{userRoleValue===0?'Front-End Developer':'Back-End Developer'}</h1><p>{props.value === true ? 'YES':'NO'}</p>
+        <div className="card">
+            <h1>Name :  {props.username} </h1>
+            <h2>Role : {props.role}</h2>
             <img src={props.image} alt='Profile pic'/>
-            
         </div>
     
     )
-    // return /*#__PURE__*/React.createElement("h1",null, "Heading Component with plain Javascript")
 }
 export default Heading;
