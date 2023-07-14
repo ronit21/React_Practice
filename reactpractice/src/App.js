@@ -4,9 +4,10 @@ import Heading from './components/Heading';
 // const Heading =()=> <h1>Hello World !</h1> // Moved to separate file Heading.js
 
 function App() {
+  let value = true;
   return (
     <div className="App">
-      <Heading username='Ronit !'/>
+      <Heading username='Ronit !' value = {value}/>
     </div>
   );
 }
