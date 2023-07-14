@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
-const Heading =()=> <h1>Hello World !</h1>
+import Heading from './components/Heading';
+// const Heading =()=> <h1>Hello World !</h1> // Moved to separate file Heading.js
 
 function App() {
   return (
